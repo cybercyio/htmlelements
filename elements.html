@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en-US">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="author" content="Awapt">
+		<meta name="description" content="This is the description of the web application. 
+		Nunc auctor odio congue urna tristique, porttitor venenatis mauris laoreet. 
+		Cras massa urna, vulputate in lorem a, fermentum vestibulum justo.">
+		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+		<title>HTML Elements</title>
+		<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+		<link href="style.css" rel="stylesheet">
+		<style type="text/css">
+			kbd
+			{
+				font-weight: bold;
+			}
+		</style>
+		<script src="main.js"></script>
+		<script type="text/javascript">
+			function change() {
+				document.getElementById('changed').innerHTML = "This text is changed.";
+			}
+		</script>
+	</head>
+	<body>
+		<header id="header">
+			<h1>HTML ELements</h1>
+		</header>
+		<!-- Navigation bar -->
+		<nav>
+			<ul>
+				<li><a href="htts://www.google.com">Home</a></li>
+				<li><a href="https://www.google.com">Solutions</a></li>
+				<li><a href="https://www.google.com">Resources</a></li>
+				<li><a href="https://www.google.com">Contact</a></li>
+			</ul>
+		</nav>
+
+		<!-- Main content -->
+		<main>
+			<!-- Article -->
+			<article>
+				<!-- Headings -->
+				<h1>This Is a Title Heading</h1>
+				<h2>This Is a Title Heading</h2>
+				<h3>This Is a Title Heading</h3>
+				<h4>This Is a Title Heading</h4>
+				<h5>This Is a Title Heading</h5>
+				<h6>This Is a Title Heading</h6>
+			</article>
+			<article>
+				<img src="inspector.png" alt="This is a alternative text." onclick="this.setAttribute('src','man.png');">
+				<!-- paragraphs -->
+				<p style="font-size: 10px;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+				Donec a diam lectus. Set sit amet ipsum mauris. 
+				Maecenas congue ligula as quam viverra nec consectetur ant hendrerit. Donec et mollis dolor. </p>
+
+				<p>Aliquam vel sem eu dolor finibus facilisis.<br> <!-- Line break -->
+					Class aptent taciti sociosqu ad litora<br>
+					per conubia nostra, per inceptos himenaeos <br>
+				Vivamus nec feugiat leo. Maecenas finibus sagittis leo.</p>
+				<p>Curabitur consequat eget ligula non placerat. 
+				Fusce ultricies magna quis tellus commodo, non pharetra sapien sodales. 
+				Mauris viverra mauris eu ipsum posuere porta. </p>
+				<hr> <!-- Horizaantal break -->
+				<p>Sed porta arcu et lacus laoreet ornare. 
+				Maecenas a elit interdum, dictum arcu ac, faucibus erat. 
+				Nunc auctor odio congue urna tristique, porttitor venenatis mauris laoreet. 
+				Cras massa urna, vulputate in lorem a, fermentum vestibulum justo. </p>
+
+				<!-- Texts -->
+				<p>This is a <em>emphasized</em> text.</p>
+				<p>This is a <strong>strong</strong> text.</p>
+				<p>This is a <b>bold</b> text.</p>
+				<p>This is a <i>italic</i> text.</p>
+				<p>This is a <u>underlined</u> text.</p>
+				<p id="changed" onclick="change();">This text will be changed</p>
+				
+				<blockquote cite="http://www.google.com">
+					<p>This a blockquote : Quisque maximus ante non faucibus mattis. 
+					Phasellus sagittis orci mauris, vitae scelerisque sapien luctus sed. 
+					Cras nec massa convallis, pellentesque felis sed, auctor quam.</p>
+				</blockquote>
+				
+				<p><q cite="http://www.google.com">This is a quote.</q></p>
+				
+				<p><cite>Citation text.</cite></p>
+				
+				<p>This is the abbreviation for <abbr title="World Wildlife Fund">WWF</abbr>.</p>
+				
+				<address><p>Hacker Academy, London, The Grim North, UK</p></address>
+				
+				<p>Meeting is on 25<sup>th</sup> of Sep 2019.</p>
+				
+				<!-- Code -->
+				<pre>
+					<code>
+		x = 5
+		y = 10
+
+		# create a temporary variable and swap the values
+		temp = x
+		x = y
+		y = temp
+
+		print('The value of x after swapping: {}'.format(x))
+		print('The value of y after swapping: {}'.format(y))
+					</code>
+				</pre>
+
+				<!-- Computer -->
+				<p>You shouldn't  <code>&lt;font&gt;</code> and <code>&lt;center&gt;</code>.</p>
+
+				<p>In the above code snippet, <var>temp</var> is a temporary variable.</p>
+
+				<p>Copy with <kbd>Ctrl</kbd> + <kbd>C</kbd>, and paste with <kbd>Ctrl</kbd> + <kbd>P</kbd> </p>
+
+				<pre>$ <kbd>nmap -sP 192.168.1.1-255</kbd>
+					<samp>
+		Starting Nmap 6.00 ( http://nmap.org ) at 2013-04-16 18:16 IST
+		Nmap scan report for 192.168.1.1
+		Host is up (0.0079s latency).
+		Nmap scan report for 192.168.1.92
+		Host is up (0.010s latency).
+		Nmap scan report for 192.168.1.101
+		Host is up (0.000086s latency).
+		Nmap scan report for 192.168.1.201
+		Host is up (0.0010s latency).
+		Nmap scan report for 192.168.1.237
+		Host is up (0.0019s latency).
+		Nmap done: 255 IP addresses (5 hosts up) scanned in 25.86 seconds
+					</samp>
+				</pre>
+
+				<p>If x<sup>2</sup> is 9, x must equal 3 or -3.</p>
+			</article>
+
+			<!-- Aside content -->
+			<aside>
+				<!-- Listing -->
+				<ul> <!-- Unordered Listing -->
+					<li>Donec mollis ipsum</li>
+					<li>Integer elit eros, tincidunt </li>
+					<li>Nunc vel semper magna. </li>
+				</ul>
+				<ol><!-- Ordered Listing -->
+					<li>Lorem ipsum dolor sit amet,</li>
+					<li>Aliquam vel sem eu dolor</li>
+					<li>Vivamus nec feugiat leo.</li>
+					<li>Maecenas finibus sagittis leo,</li>
+				</ol>
+
+				<!-- Description lists -->
+				<dl>
+					<dt>soliloquy</dt>
+					<dd>Nunc vel semper magna. Maecenas venenatis posuere tortor ullamcorper sodales. 
+					Quisque arcu nunc, viverra sed gravida vitae, rhoncus et mauris. 
+					Duis tortor diam, cursus vel cursus quis, vestibulum imperdiet ex. </dd>
+					<dt>monologue</dt>
+					<dd>Integer non gravida ligula, in volutpat neque. 
+					Nullam fringilla luctus dui, pellentesque hendrerit urna vehicula dapibus. 
+					In consectetur nec quam eget finibus. </dd>
+					<dt>aside</dt>
+					<dd>Praesent vehicula in justo eu eleifend. 
+					Quisque a facilisis est. 
+					Mauris vel maximus arcu, sed fringilla libero. 
+					Nunc auctor sem at porttitor pulvinar. </dd>
+				</dl>
+
+				<!-- Hyperlinks -->
+				<a href='https://www.google.com'>A link to Google.</a>
+				<a href="https://www.google.com" title="Title">Google</a>.
+				<a href="mailto:nowhere@mail.google.com">Send Email</a>
+			</aside>
+
+			<!-- Sectioning with div -->
+			<div class="section1">
+				<p>Integer elit eros, tincidunt nec <span>vestibulum ut,</span> auctor vitae urna..</p>
+
+				<!-- Tables -->
+				<table>
+					<tr><th>Item</th><th>Description</th></tr>
+					<tr><td>Item 1</td><td>Description of Item 1</td></tr>
+					<tr><td>Item 2</td><td>Description of Item 2</td></tr>
+					<tr><td>Item 3</td><td>Description of Item 3</td></tr>
+					<tr><td>Item 4</td><td>Description of Item 4</td></tr>
+				</table>
+
+				<!-- Input fields -->
+				<form action="#" method="post">
+					<input type="search" name="search" placeholder="Search query">
+					<input type="submit" name="submit" value="Go!">
+					<textarea rows="8" cols="50" name="message"></textarea>
+					<input class="checkbox" type="checkbox" name="checkbox" value="" />
+					<select id="id" name="options">
+						<option value="1">Example 1</option>
+						<option value="2">Example 2</option>
+					</select>
+					<input type="text" disabled>
+					<input type="text" name="name" value="">
+					<button>Cool Button</button>
+				</form>
+
+				<!-- Date and times -->
+				<p><time datetime="2016-01-20">20 January 2016</time></p>
+			</div>
+
+			<!-- Footer-->
+			<footer>
+				<p>©Copyright 2019 by AWAPT. All rights reversed.</p>
+			</footer>
+		</main>
+	</body>
+</html>
